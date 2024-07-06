@@ -61,6 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _deleteCounter() {
+    setState(() {
+      _counter -= _counter;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -106,6 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: _incrementCounter,
               child: Text('Increment'),
             ),
+            RaisedButton(onPressed: _deleteCounter, child: Text('Reset count')),
           ],
         ),
       ),
