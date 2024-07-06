@@ -108,10 +108,6 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-            RaisedButton(
-              onPressed: _incrementCounter,
-              child: Text('Increment'),
-            ),
             RaisedButton(onPressed: _deleteCounter, child: Text('Reset count')),
           ],
         ),
